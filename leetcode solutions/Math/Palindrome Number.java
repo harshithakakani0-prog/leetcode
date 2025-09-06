@@ -3,12 +3,17 @@ class Solution {
         if(x<0){
             return false;
         }
-        long rev=0;
-        long temp=x;
-        while(temp !=0){
-            long digit=temp%10;
+
+
+        int rev=0;
+        int temp=x;
+
+
+        while(temp!=0){
+            int digit=temp%10;
             rev=rev*10+digit;
             temp=temp/10;
+
         }
         return (rev==x);
     }
